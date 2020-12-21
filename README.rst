@@ -85,3 +85,10 @@ You may or may not want to install the project now into your virtualenv in
     ~/some/path/pyblanco/.venv/bin/blanco
 
 For fun, look at the generated executable.
+
+Using GitHub Codespaces or Visual Studio Code
+=============================================
+
+You may want to use GitHub Codespaces or Visual Studio Code. For this, take a
+look at the sample configurations in `.devcontainer <.devcontainer>`_ and
+`.vscode <.vscode>`_.

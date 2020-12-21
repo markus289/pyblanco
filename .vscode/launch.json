@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "blanco",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pyblanco/console/__init__.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}

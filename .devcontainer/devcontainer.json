@@ -1,0 +1,24 @@
+{
+	"name": "Python",
+	"dockerFile": "Dockerfile",
+	"settings": {
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
+		"files.trimFinalNewlines": true,
+		"files.watcherExclude": {
+			"**/.venv/**": true
+		},
+		"workbench.colorTheme": "GitHub Dark",
+		"editor.formatOnSave": true,
+		"python.formatting.provider": "black",
+		"python.linting.pylintEnabled": false,
+		"python.linting.flake8Enabled": true,
+		"python.linting.enabled": true
+	},
+	"extensions": [
+		"github.github-vscode-theme",
+		"ms-python.python"
+	],
+	"remoteUser": "vscode",
+	"postCreateCommand": "/home/vscode/.poetry/bin/poetry install --no-root"
+}
