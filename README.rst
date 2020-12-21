@@ -19,3 +19,10 @@ follow these instructions blindly.
 
 When creating the virtualenv, use the `--no-root` option to leave out the
 project itself.
+
+## Add and configure `black`
+
+    $ poetry add --dev black
+
+Then add the section `[tool.black]` as shown in file `pyproject.toml
+<pyproject.toml>`_.
