@@ -35,3 +35,10 @@ Then add the file `.flake8 <.flake8>`_ to make `flake8` compatible with
 `black`. See the `black documentation
 <https://black.readthedocs.io/en/stable/the_black_code_style.html#line-length>`_
 for details.
+
+## Add `rope`
+
+`rope` is used for refactoring in Visual Studio Code, so install it as a
+development dependency.
+
+    $ poetry add --dev rope
