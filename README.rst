@@ -1,10 +1,15 @@
-# pyblanco
+********
+pyblanco
+********
 
 This is an empty Python project. The purpose is to note down the steps to
 create a fresh Python project with a modern layout, using modern tools. Don't
 follow these instructions blindly.
 
-## Basic setup using `poetry` and `git`
+Basic setup using ``poetry`` and ``git``
+========================================
+
+.. code-block:: bash
 
     $ poetry new pyblanco
     $ cd pyblanco
@@ -17,28 +22,37 @@ follow these instructions blindly.
     $ git add .
     $ git commit -m "Initial import"
 
-When creating the virtualenv, use the `--no-root` option to leave out the
+When creating the virtualenv, use the ``--no-root`` option to leave out the
 project itself.
 
-## Add and configure `black`
+Add and configure ``black``
+===========================
+
+.. code-block:: bash
 
     $ poetry add --dev black
 
-Then add the section `[tool.black]` as shown in file `pyproject.toml
+Then add the section ``[tool.black]`` as shown in file `pyproject.toml
 <pyproject.toml>`_.
 
-## Add and configure `flake8`
+Add and configure ``flake8``
+============================
+
+.. code-block:: bash
 
     $ poetry add --dev flake8
 
-Then add the file `.flake8 <.flake8>`_ to make `flake8` compatible with
-`black`. See the `black documentation
+Then add the file `.flake8 <.flake8>`_ to make ``flake8`` compatible with
+``black``. See the `black documentation
 <https://black.readthedocs.io/en/stable/the_black_code_style.html#line-length>`_
 for details.
 
-## Add `rope`
+Add ``rope``
+============
 
-`rope` is used for refactoring in Visual Studio Code, so install it as a
+``rope`` is used for refactoring in Visual Studio Code, so install it as a
 development dependency.
+
+.. code-block:: bash
 
     $ poetry add --dev rope
