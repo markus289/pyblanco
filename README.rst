@@ -26,3 +26,12 @@ project itself.
 
 Then add the section `[tool.black]` as shown in file `pyproject.toml
 <pyproject.toml>`_.
+
+## Add and configure `flake8`
+
+    $ poetry add --dev flake8
+
+Then add the file `.flake8 <.flake8>`_ to make `flake8` compatible with
+`black`. See the `black documentation
+<https://black.readthedocs.io/en/stable/the_black_code_style.html#line-length>`_
+for details.
