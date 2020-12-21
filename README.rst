@@ -56,3 +56,31 @@ development dependency.
 .. code-block:: bash
 
     $ poetry add --dev rope
+
+Add and install an executable
+=============================
+
+Let's say you want to install an executable. ``poetry`` gives you the tooling
+to do so easily. Add the following section to your `pyproject.toml
+<pyproject.toml>`_:
+
+.. code-block:: toml
+
+    [tool.poetry.scripts]
+    blanco = "pyblanco.console:main"
+
+Here, ``blanco`` refers to the executable name, e.g., ``/usr/bin/blanco``.
+``pyblanco.console`` is the module within the project and ``main`` refers to
+the entry function of the executable ``blanco``.
+
+You may or may not want to install the project now into your virtualenv in
+``.venv``.
+
+.. code-block:: bash
+
+    $ poetry install
+    $ source .venv/bin/activate
+    (.venv) $ which blanco
+    ~/some/path/pyblanco/.venv/bin/blanco
+
+For fun, look at the generated executable.
