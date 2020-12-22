@@ -17,6 +17,7 @@ Basic setup using ``poetry`` and ``git``
     $ sed -i '0,/^description =/s/""/"An empty Python project"/' pyproject.toml
     $ curl -o LICENSE https://www.boost.org/LICENSE_1_0.txt
     $ curl -o .gitignore https://www.toptal.com/developers/gitignore/api/python
+    $ poetry config --local virtualenvs.in-project true
     $ poetry install --no-root
     $ git init
     $ git add .
