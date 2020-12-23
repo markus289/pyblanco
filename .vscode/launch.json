@@ -2,11 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "blanco",
+            "name": "hs",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/pyblanco/console/__init__.py",
-            "console": "integratedTerminal"
+            "program": "${workspaceFolder}/housing_search/console/__init__.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceRoot}"
+            }
         }
     ]
 }
