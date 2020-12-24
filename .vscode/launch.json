@@ -5,7 +5,7 @@
             "name": "hs",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/housing_search/console/__init__.py",
+            "program": "${workspaceFolder}/pyblanco/console/__init__.py",
             "console": "integratedTerminal",
             "env": {
                 "PYTHONPATH": "${workspaceRoot}"
