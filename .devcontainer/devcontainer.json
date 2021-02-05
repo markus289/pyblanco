@@ -8,7 +8,7 @@
 		"files.watcherExclude": {
 			"**/.venv/**": true
 		},
-		"workbench.colorTheme": "GitHub Dark",
+		"workbench.colorTheme": "Default Dark+",
 		"editor.formatOnSave": true,
 		"python.formatting.provider": "black",
 		"python.linting.pylintEnabled": false,
@@ -16,7 +16,6 @@
 		"python.linting.enabled": true
 	},
 	"extensions": [
-		"github.github-vscode-theme",
 		"ms-python.python"
 	],
 	"remoteUser": "vscode",
