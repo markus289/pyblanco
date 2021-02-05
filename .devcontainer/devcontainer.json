@@ -18,7 +18,8 @@
 	},
 	"extensions": [
 		"ms-python.python",
-		"ms-python.vscode-pylance"
+		"ms-python.vscode-pylance",
+		"vscodevim.vim"
 	],
 	"remoteUser": "vscode",
 	"postCreateCommand": "/home/vscode/.poetry/bin/poetry install --no-root"
