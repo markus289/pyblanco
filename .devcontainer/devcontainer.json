@@ -13,10 +13,12 @@
 		"python.formatting.provider": "black",
 		"python.linting.pylintEnabled": false,
 		"python.linting.flake8Enabled": true,
-		"python.linting.enabled": true
+		"python.linting.enabled": true,
+		"python.languageServer": "Pylance"
 	},
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"ms-python.vscode-pylance"
 	],
 	"remoteUser": "vscode",
 	"postCreateCommand": "/home/vscode/.poetry/bin/poetry install --no-root"
