@@ -13,9 +13,9 @@ Basic setup using ``poetry`` and ``git``
 
     $ poetry new pyblanco
     $ cd pyblanco
-    $ sed -i '0,/^$/s/^$/license = "BSL-1.0"\n&/' pyproject.toml
+    $ sed -i '0,/^$/s/^$/license = "EUPL-1.2"\n&/' pyproject.toml
     $ sed -i '0,/^description =/s/""/"An empty Python project"/' pyproject.toml
-    $ curl -o LICENSE https://www.boost.org/LICENSE_1_0.txt
+    $ curl -o LICENSE https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt
     $ curl -o .gitignore https://www.toptal.com/developers/gitignore/api/python
     $ poetry config --local virtualenvs.in-project true
     $ poetry install --no-root
