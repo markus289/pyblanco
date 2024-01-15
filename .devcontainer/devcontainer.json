@@ -2,25 +2,33 @@
 	"name": "Python",
 	"dockerFile": "Dockerfile",
 	"settings": {
-		"files.insertFinalNewline": true,
-		"files.trimTrailingWhitespace": true,
-		"files.trimFinalNewlines": true,
-		"files.watcherExclude": {
-			"**/.venv/**": true
+		"[python]": {
+			"editor.rulers": [88]
 		},
-		"workbench.colorTheme": "Default Dark+",
-		"editor.formatOnSave": true,
-		"python.formatting.provider": "black",
-		"python.linting.pylintEnabled": false,
-		"python.linting.flake8Enabled": true,
-		"python.linting.enabled": true,
-		"python.languageServer": "Pylance"
+		"editor.rulers": [80],
+		"extensions.ignoreRecommendations": true,
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": true,
+		"files.watcherExclude": {
+			"**/.venv/**": true,
+			"**/venv/**": true
+		},
+		"git.openRepositoryInParentFolders": "never",
+		"redhat.telemetry.enabled": false,
+		"telemetry.enableCrashReporter": false,
+		"telemetry.enableTelemetry": false,
+		"workbench.colorTheme": "Default Light Modern"
 	},
 	"extensions": [
+		"asciidoctor.asciidoctor-vscode",
+		"ms-python.black-formatter",
+		"ms-python.flake8",
 		"ms-python.python",
-		"ms-python.vscode-pylance",
+		"ms-vscode-remote.remote-ssh",
+		"redhat.ansible",
 		"vscodevim.vim"
 	],
 	"remoteUser": "vscode",
-	"postCreateCommand": "/home/vscode/.poetry/bin/poetry install --no-root"
+	"postCreateCommand": "poetry install --no-root"
 }
