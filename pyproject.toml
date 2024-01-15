@@ -8,12 +8,6 @@ license = "EUPL-1.2"
 [tool.poetry.dependencies]
 python = "^3.9"
 
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
-black = "^20.8b1"
-flake8 = "^3.8.4"
-rope = "^0.18.0"
-
 [tool.black]
 line-length = 88
 include = '\.pyi?$'
