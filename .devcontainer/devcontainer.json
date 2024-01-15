@@ -1,35 +1,43 @@
 {
-	"name": "pyblanco",
-	"dockerFile": "Dockerfile",
-	"settings": {
-		"[python]": {
-			"editor.rulers": [88]
-		},
-		"editor.rulers": [80],
-		"extensions.ignoreRecommendations": true,
-		"files.insertFinalNewline": true,
-		"files.trimFinalNewlines": true,
-		"files.trimTrailingWhitespace": true,
-		"files.watcherExclude": {
-			"**/.venv/**": true,
-			"**/venv/**": true
-		},
-		"git.openRepositoryInParentFolders": "never",
-		"python.analysis.typeCheckingMode": "strict",
-		"redhat.telemetry.enabled": false,
-		"telemetry.enableCrashReporter": false,
-		"telemetry.enableTelemetry": false,
-		"workbench.colorTheme": "Default Light Modern"
-	},
-	"extensions": [
-		"asciidoctor.asciidoctor-vscode",
-		"ms-python.black-formatter",
-		"ms-python.flake8",
-		"ms-python.python",
-		"ms-vscode-remote.remote-ssh",
-		"redhat.ansible",
-		"vscodevim.vim"
-	],
-	"remoteUser": "vscode",
-	"postCreateCommand": "poetry install --no-root"
+  "name": "pyblanco",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "asciidoctor.asciidoctor-vscode",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.python",
+        "ms-vscode-remote.remote-ssh",
+        "redhat.ansible",
+        "vscodevim.vim"
+      ],
+      "settings": {
+        "[python]": {
+          "editor.rulers": [
+            88
+          ]
+        },
+        "editor.rulers": [
+          80
+        ],
+        "extensions.ignoreRecommendations": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "files.watcherExclude": {
+          "**/.venv/**": true,
+          "**/venv/**": true
+        },
+        "git.openRepositoryInParentFolders": "never",
+        "python.analysis.typeCheckingMode": "strict",
+        "redhat.telemetry.enabled": false,
+        "telemetry.enableCrashReporter": false,
+        "telemetry.enableTelemetry": false,
+        "workbench.colorTheme": "Default Light Modern"
+      }
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "poetry install --no-root"
 }
