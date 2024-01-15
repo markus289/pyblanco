@@ -26,38 +26,6 @@ Basic setup using ``poetry`` and ``git``
 When creating the virtualenv, use the ``--no-root`` option to leave out the
 project itself.
 
-Add and configure ``black``
-===========================
-
-.. code-block:: bash
-
-    $ poetry add --dev black
-
-Then add the section ``[tool.black]`` as shown in file `pyproject.toml
-<pyproject.toml>`_.
-
-Add and configure ``flake8``
-============================
-
-.. code-block:: bash
-
-    $ poetry add --dev flake8
-
-Then add the file `.flake8 <.flake8>`_ to make ``flake8`` compatible with
-``black``. See the `black documentation
-<https://black.readthedocs.io/en/stable/the_black_code_style.html#line-length>`_
-for details.
-
-Add ``rope``
-============
-
-``rope`` is used for refactoring in Visual Studio Code, so install it as a
-development dependency.
-
-.. code-block:: bash
-
-    $ poetry add --dev rope
-
 Add and install an executable
 =============================
 
