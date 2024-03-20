@@ -2,8 +2,8 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "hs",
-            "type": "python",
+            "name": "blanco",
+            "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/pyblanco/console/__init__.py",
             "console": "integratedTerminal",
