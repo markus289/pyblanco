@@ -4,12 +4,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "asciidoctor.asciidoctor-vscode",
         "ms-python.black-formatter",
         "ms-python.flake8",
         "ms-python.python",
-        "ms-vscode-remote.remote-ssh",
-        "redhat.ansible",
         "vscodevim.vim"
       ],
       "settings": {
@@ -31,9 +28,9 @@
         },
         "git.openRepositoryInParentFolders": "never",
         "python.analysis.typeCheckingMode": "strict",
-        "redhat.telemetry.enabled": false,
         "telemetry.enableCrashReporter": false,
         "telemetry.enableTelemetry": false,
+        "update.mode": "none",
         "workbench.colorTheme": "Default Light Modern"
       }
     }
